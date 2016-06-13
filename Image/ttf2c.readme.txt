@@ -1,0 +1,6 @@
+
+To generate a PNG of a font
+./ttf2png -vv -a -s 12 -d Roboto.txt -o Roboto.png Roboto-Regular.ttf
+
+To generate C code with font data
+./ttf2c -vv -a -s 12 Roboto-Regular.ttf > Roboto.c
