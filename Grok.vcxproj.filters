@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Container">
+      <UniqueIdentifier>{5058c6ff-1b6c-4443-acf2-f7acc626cb0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Basic">
+      <UniqueIdentifier>{2d0b943a-f8a6-49d8-96fb-b80bf253ca4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{47b20b52-f690-4991-9f21-eebe82484be0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image">
+      <UniqueIdentifier>{7e5f2b9a-e314-4a7b-8711-b2acd85befbb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Container\Vector.h">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\Exception.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\Memory.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\System.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\Assert.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\Debug.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\Macros.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\Matrix.h">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\Random.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\Integer.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\Time.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\Console.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\String.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Distribution.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Formula.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\Sequence.h">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\Sort.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\List.h">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\Set.h">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\Stack.h">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\CSRMatrix.h">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\Queue.h">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Container\Array3.h">
+      <Filter>Container</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Font.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Color.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Box.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\Image.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\File.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\Format.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Basic\Float.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\GaussLegendreQuadrature.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\GaussPattersonQuadrature.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Quadrature.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Basic\Memory.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Basic\Debug.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Basic\Random.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Basic\Integer.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Basic\Time.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Basic\Console.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Basic\String.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Basic\Sort.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\Font.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\FontRoboto10.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\FontRoboto12.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\FontRoboto14.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\FontRoboto18.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\FontRoboto24.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\FontRoboto8.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\Color.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\Image.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Basic\File.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Basic\Float.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\GaussLegendreQuadrature.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\GaussPattersonQuadrature.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
