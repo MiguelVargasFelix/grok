@@ -1,0 +1,8 @@
+body {background-color:white; color:black; font-family:sans-serif; font-size:16px}
+h1 {font-size:20px}
+a {border:solid white 1px; color:navy; text-decoration:none}
+a:hover {border:solid navy 1px; color:navy; text-decoration:none}
+table {width:100%; empty-cells:show}
+th {text-align:left; border:1px solid #A0A0A0}
+td {border:1px solid #D0D0D0; vertical-align:text-top}
+span {font-size:14px}
