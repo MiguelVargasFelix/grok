@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Basic/Assert.h</title>
+<link href="../contents.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>Basic/Assert.h</h1>
+<ul>
+<li><a href="#Assert Macro">Assert Macro</a></li>
+</ul>
+<hr/>
+<h2><a name="Assert Macro"></a>Assert Macro</h2>
+<h3>Definition</h3>
+<pre>
+Assert(<var>condition</var>)
+</pre>
+<h3>Input parameters</h3>
+<dl>
+<dt><var>condition</var></dt>
+<dd>Any expression that produces a boolean result. If <var>condition</var> is false then the execution stops.</dd>
+</dl>
+<h3>Description</h3>
+<p>The propose of this macro is to detect invalid conditions on the logic of a program. If <var>condition</var> is false then a message is sent to <b>stderr</b> on POSIX systems, or to the <b>debug output</b> on Windows systems. The message indicates the <var>condition</var>, the source file, line and function where the Assert is located. If the program is being run inside a debugger then the execution stops and the control is returned to the debugger. If the program runs outside of a debugger then the program is ended.</p>
+<p>On Windows systems GUI programs does not have <b>stderr</b>, in these cases the <b>debug output</b> can be seen using the program DebugView which is part of <a href="http://technet.microsoft.com/en-us/sysinternals">SysInternals</a> or if the program is being debugged within Visual Studio then the <b>debug output</b> is seen in the Output panel.</p>
+<p>This is a macro and does not belong to the Grok namespace.</p>
+<p>This macro can be disabled if the <b>NDEBUG</b> macro is defined in the compiler command line or in the project properties under preprocessor definitions.</p>
+<h3>Example</h3>
+<p>In this code 'Assert' is used to prevent division by zero. If 'b' is different to zero then the program continues its execution.</p>
+<pre>
+float a, b, c;
+Assert(b!=0)
+c = a/b;
+</pre>
+<p>Only if 'b' equals to zero then the execution will stop and an error message like this is sent.</p>
+<pre>
+Assert fail: b!=0, source: Test\main.cpp", line: 24, function: main
+</pre>
+<h3>Requirements</h3>
+<pre>
+#include &lt;Basic/Assert.h&gt;
+</pre>
+<h3>See also</h3>
+<p><a href="Debug.html">Basic/Debug.h</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Assertion_%28software_development%29">Assertion (software development) [Wikipedia]</a></p>
+</body>
+</html>
