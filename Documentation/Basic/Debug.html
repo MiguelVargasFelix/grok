@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Basic/Debug.h</title>
+<link href="../contents.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>Basic/Debug.h</h1>
+<ul>
+<li><a href="#Debug Macro">Debug Macro</a></li>
+<li><a href="#DebugMessage Function">Grok::DebugMessage Function</a></li>
+<li><a href="#DebugStop Function">Grok::DebugStop Function</a></li>
+</ul>
+
+<hr/>
+<h2><a name="Debug Macro"></a>Debug Macro</h2>
+<h3>Definition</h3>
+<pre>
+Debug(<var>message</var>)
+</pre>
+<h3>Input parameters</h3>
+<dl>
+<dt><var>message</var></dt>
+<dd>This text will sent to the <b>debug output</b>.</dd>
+</dl>
+<h3>Description</h3>
+<p>The propose of this macro is help debugging, sending messages to the <b>debug output</b>, on POSIX systems the output will be <b>stderr</b>. On Windows systems the <b>debug output</b> can be seen using the program DebugView which is part of <a href="http://technet.microsoft.com/en-us/sysinternals">SysInternals</a> or if the program is being debugged within Visual Studio then the <b>debug output</b> is seen in the Output panel.</p>
+<p>This is a macro and does not belong to the Grok namespace.</p>
+<p>This macro can be disabled if the <b>NDEBUG</b> macro is defined in the compiler command line or in the project properties under preprocessor definitions.</p>
+<h3>Example</h3>
+<p>The following code is an example.</p>
+<pre>
+Debug("This code works!");
+</pre>
+<p>If the <b>NDEBUG</b> macro is not defined then the <b>debug output</b> will show.</p>
+<pre>
+This code works!
+</pre>
+<h3>Requirements</h3>
+<pre>
+#include &lt;Basic/Debug.h&gt;
+</pre>
+<h3>See also</h3>
+<p><a href="Assert.html">Basic/Assert.h</a></p>
+
+<hr/>
+<h2><a name="DebugMessage Function"></a>Grok::DebugMessage Function</h2>
+<h3>Definition</h3>
+<pre>
+namespace Grok
+{
+   void DebugMessage(const char* <var>message</var>) throw();
+}
+</pre>
+<h3>Input parameters</h3>
+<dl>
+<dt><var>message</var></dt>
+<dd>This text will sent to the <b>debug output</b>.</dd>
+</dl>
+<h3>Description</h3>
+<p>The propose of this function is help debugging, sending messages to the <b>debug output</b>, on POSIX systems the output will be <b>stderr</b>. On Windows systems the <b>debug output</b> can be seen using the program DebugView which is part of <a href="http://technet.microsoft.com/en-us/sysinternals">SysInternals</a> or if the program is being debugged within Visual Studio then the <b>debug output</b> is seen in the Output panel.</p>
+<p>The difference between this function and the <a href="#Debug Macro">Debug macro</a> is that this function can not be disabled by the <b>NDEBUG</b> macro.</p>
+<h3>Example</h3>
+<p>The following code is an example.</p>
+<pre>
+DebugMessage("This code works!");
+</pre>
+<p>The <b>debug output</b> will show.</p>
+<pre>
+This code works!
+</pre>
+<h3>Requirements</h3>
+<pre>
+#include &lt;Basic/Debug.h&gt;
+</pre>
+
+<hr/>
+<h2><a name="DebugStop Function"></a>Grok::DebugStop Function</h2>
+<h3>Definition</h3>
+<pre>
+namespace Grok
+{
+   void DebugStop() throw();
+}
+</pre>
+<h3>Description</h3>
+<p>This function stops the execution of the program. If the program is being run inside a debugger then the execution stops and the control is returned to the debugger. If the program runs outside of a debugger then the program is ended.</p>
+<p>This function can not be disabled by the <b>NDEBUG</b> macro.</p>
+<h3>Requirements</h3>
+<pre>
+#include &lt;Basic/Debug.h&gt;
+</pre>
+</body>
+</html>
